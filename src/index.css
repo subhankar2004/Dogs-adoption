@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a {
+    font-weight: 600;
+}
+
+.shdw{
+    filter: drop-shadow(.5rem .5rem 1rem rgba(0, 0, 0, 0.527));
+}
+
+.donate-img{
+    transition: all .3s ease-in-out;
+}
+
+.donate-card:hover .donate-img {
+    transform: scale(1.1);
+}
+
+.doggy{
+    transition: all 1s ease-in-out;
+}
+
+#contact:hover .doggy{
+    right: 0;
+}
+
+
+.btn1 {
+    background-image: linear-gradient(to right, #FF8008 0%, #FFC837 51%, #FF8008 100%);
+    padding: .5rem 0;
+    width: 10rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border: 1.5px solid black;
+    box-shadow: .3rem .3rem 1.5rem #F8AB27;
+    border-radius: 2rem;
+    display: block;
+    font-weight: 600;
+}
+
+.btn1:hover {
+    background-position: right center;
+    cursor: pointer;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.btn2 {
+    background-image: linear-gradient(to right, #000000 0%, #434343 51%, #000000 100%);
+    padding: .5rem 0;
+    cursor: pointer;
+    width: 10rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: .5rem .5rem 1.5rem rgba(0, 0, 0, 0.71);
+    border: 1.5px solid transparent;
+    border-radius: 2rem;
+    display: block;
+}
+
+.btn2:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 1440px) {
+    html {
+        font-size: 140%;
+    }
+}
+
+/* @media screen and (max-width: 1024px) and (min-height: 960px) {
+    
+}
+
+@media screen and (max-width: 760px) {
+    
+}
+
+@media screen and (max-width: 620px) {
+    
+}
+
+@media screen and (max-width:350px) {
+    
+} */
+
+
+/* Background */
+
+
+.main-bg {
+    background: url(/assets/bg-lptp.svg) center/cover no-repeat;
+}
+
+/* @media screen and (max-width: 1040px) {
+    .main-bg {
+        background: url(./assets/hero-bg-tab-hor.svg) center/cover no-repeat;
+    }
+} */
+
+@media screen and (max-width: 1024px) and (min-height: 960px) {
+    .main-bg {
+        background: url(/assets/bg-tab.svg) center/cover no-repeat;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .main-bg {
+        background: url(/assets/bg-phn.svg) center/cover no-repeat;
+    }
+}
+
+/* @media screen and (max-width:350px) {
+    .main-bg {
+        background: url(/assets/bg-phn.svg) center/cover no-repeat;
+    }
+} */
